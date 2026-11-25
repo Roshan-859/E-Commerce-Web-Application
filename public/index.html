@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6"><meta name="description" content="A thoughtful little shop for everyday things, made to be kept.">
+  <title>Atelier — Everyday, considered.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A little something for your first order <span>—</span> take 10% off with FIRST10</div>
+  <header class="site-header"><a class="wordmark" href="#home" aria-label="Atelier home">atelier<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#shop" class="nav-link active">Shop</a><a href="#shop" data-category-link="Home" class="nav-link">Home</a><a href="#shop" data-category-link="Apparel" class="nav-link">Apparel</a><a href="#shop" data-category-link="Accessories" class="nav-link">Accessories</a></nav>
+    <div class="header-actions"><button class="icon-button account-trigger" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-4 3-6 7-6s6.5 2 7 6"/></svg><span class="account-label">Account</span></button><button class="bag-trigger" aria-label="Shopping bag">Bag <span class="bag-count">0</span></button><button class="menu-trigger icon-button" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button></div>
+  </header>
+  <main id="home">
+    <section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span>THE EVERYDAY EDIT</div><h1>Good things,<br>made to <em>stay.</em></h1><p>Considered objects for the little moments that make a life. Made thoughtfully, chosen slowly.</p><a href="#shop" class="button button-dark">Find your everyday <span>↗</span></a><div class="hero-note"><span class="note-star">✳</span> A slower kind of shopping.</div></div><div class="hero-art"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=90" alt="Sunlit, thoughtfully arranged lifestyle shop"><div class="hero-art-label"><span>01 / 04</span>THINGS FOR REAL LIFE</div><div class="art-sticker">made<br>with care <span>✳</span></div></div><div class="hero-side-caption">THOUGHTFULLY SOURCED · ALWAYS</div></section>
+    <section class="trust-strip"><span>GOOD THINGS, CHOSEN WELL</span><span class="trust-dot">✳</span><span>MADE FOR THE LONG HAUL</span><span class="trust-dot">✳</span><span>A LITTLE MORE CONSIDERED</span></section>
+    <section id="shop" class="shop-section"><div class="section-top"><div><div class="eyebrow"><span class="eyebrow-line"></span>A FEW FAVOURITES</div><h2>Meet the <em>keepers.</em></h2></div><a href="#shop" class="text-link" id="view-all">View all <span>↗</span></a></div>
+      <div class="shop-toolbar"><div class="filters" role="group" aria-label="Filter by category"><button class="filter-chip selected" data-filter="All">Everything <span class="filter-count">08</span></button><button class="filter-chip" data-filter="Home">Home</button><button class="filter-chip" data-filter="Apparel">Apparel</button><button class="filter-chip" data-filter="Accessories">Accessories</button></div><label class="sort-wrap"><span>Sort by</span><select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name</option></select></label></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+    <section class="manifesto"><div class="manifesto-image"><img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1100&q=85" alt="Calm, light-filled living space"><span class="manifesto-stamp">A LITTLE<br>LESS, BUT<br><em>BETTER.</em></span></div><div class="manifesto-copy"><div class="eyebrow"><span class="eyebrow-line"></span>WHY WE'RE HERE</div><h2>Buy less.<br><em>Love it more.</em></h2><p>We believe in the things you reach for every day. In materials that feel better with time, in pieces that have a place, and in buying with a little more care.</p><a href="#shop" class="text-link">A bit about us <span>↗</span></a><div class="manifesto-foot">SMALL THINGS. GOOD THOUGHTS. <span>✳</span></div></div></section>
+    <section class="newsletter"><div><div class="eyebrow"><span class="eyebrow-line"></span>LETTERS FROM THE SHOP</div><h2>A note from us,<br><em>now and then.</em></h2><p>Good finds, thoughtful ideas, and the occasional little treat. Never too much.</p></div><form id="newsletter-form"><label for="newsletter-email">Your email address</label><div class="email-field"><input id="newsletter-email" type="email" placeholder="you@example.com" required><button aria-label="Subscribe">↗</button></div><small>By subscribing, you agree to receive our occasional notes. Unsubscribe anytime.</small><div id="newsletter-success" class="newsletter-success" hidden>You're on the list. Talk soon ✳</div></form></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#home">atelier<span>.</span></a><span>GOOD THINGS, FOR EVERYDAY.</span><span>© ATELIER 2026</span></footer>
+  <div id="overlay" class="overlay" hidden></div><aside id="cart-drawer" class="drawer" aria-label="Shopping bag" aria-hidden="true"></aside><div id="modal-root"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>

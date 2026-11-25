@@ -1,0 +1,8 @@
+{
+  "name": "e-commerce-web-application",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A full-stack demo shop with product and order management.",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}
